@@ -1,0 +1,49 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Login>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+    Layout ="masterLayout.cshtml";
+
+    var home = (Home)Umbraco.Content(1065);
+}
+
+<link href="~/css/login.css" rel="stylesheet" />
+
+<div class="login">
+    <div class="row">
+        <div class="col-lg-8 content-left">
+            <div class="background-login">
+                <img class="background-login-img" width="100%" src="~/img/login-bg.png" />
+            </div>
+        </div>
+        <div style="margin: 0" class="col-md-4 col-12">
+            <div class="container mt-50">
+                <div class="col-lg-11">
+                    <div class="text-center">
+                        <a href="@home.Url()"><img style="width: 185px;" src="~/img/logo-vinfast.png" /></a>
+                    </div>
+
+                    <form class="mt-50">
+                        <div class="form-outline mb-4">
+                            <input type="email" id="form2Example11" class="form-control" placeholder="user name" />
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <input type="password" id="form2Example22" class="form-control" placeholder="password" />
+
+                        </div>
+
+                        <div class="text-center pt-1 mb-5 pb-1">
+                            <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log in</button>
+                            <a class="text-muted" href="#!">Forgot password?</a>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center pb-4">
+                            <p class="mb-0 me-2 mr-20">Don't have an account?</p>
+                            <button type="button" class="btn btn-outline-danger">Create new</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

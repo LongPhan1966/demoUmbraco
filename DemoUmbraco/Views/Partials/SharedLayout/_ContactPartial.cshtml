@@ -1,0 +1,79 @@
+﻿@using (Html.BeginUmbracoForm("SubmitForm", "Contact", FormMethod.Post))
+{
+    <section class="content">
+        <div class="container content-container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-title mb-50">
+                        LIÊNHỆ
+                        <span style="color: rgb(70,132,205);"> VINFAST</span>
+                    </h2>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="input-info">
+                        <label class="label-info" for="">Họ và Tên</label>
+                        <input class="input-form" name="userName" id="userName" type="text" required="required" placeholder="Nguyễn Văn A">
+                    </div>
+                    <div class="input-info">
+                        <label class="label-info" for="">SĐT</label>
+                        <input class="input-form" name="phone" id="phone" type="number" required="required" placeholder="Tối thiểu 8 chữ số">
+                    </div>
+                    <div class="input-info">
+                        <label class="label-info" for="">Email</label>
+                        <input class="input-form" name="email" id="email" type="email" required="required" placeholder="demo@domain.com">
+                    </div>
+                    <div class="input-info">
+                        <label class="label-info" for="">Lựa chọn yêu cầu</label>
+                        <input class="input-form" name="option" id="option" type="text" required="required" placeholder="Bạn cần hỗ trợ vấn đề gì ?">
+                    </div>
+                    <div class="text-info ">
+                        <label class="label-info" for="">Nhắn tin tới VinFast</label><br>
+                        <textarea class="text-form" name="message" id="message" type="text" required="required" placeholder="Bạn muốn nhắn nhủ gì tới Vinfast"></textarea>
+                    </div>
+
+                    <div class="button d-flex justify-content-center mb-20">
+                        <button class="btn btn-primary">Gửi thông tin tới VINFAST</button>
+                    </div>
+                </div>
+               
+                <div class="col-md-6 col-12 right">
+                    <p>Trụ sở chính</p>
+                    <p class="mb-20">Khu kinh tế Đình Vũ – Cát Hải, Đảo Cát Hải, Thị trấn Cát Hải, Huyện Cát Hải, Thành phố Hải Phòng, Việt Nam</p>
+                    <p class="mb-20">Email: cskh@vinfast.vn</p>
+                    <p>Chi nhánh Hà Nội</p>
+                    <p class="mb-20">Tầng 7, Toà Symphony, Đường Chu Huy Mân, Khu đô thị Vinhomes Riverside Long Biên, Long Biên, Hà Nội, Việt Nam</p>
+                    <div class="contact d-flex mt-20">
+                        <h4 class="hotline-right">HOT LINE</h4>
+                        <p class="number-right">1900-232389</p>
+                        <a class="fb-right" href=""><i class="fab fa-facebook"></i></a>
+                        <a class="ytb-right" href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom mt-50">
+            <div class="container">
+                <div class="row">
+                    <div class="bottom-left col-lg-6 col-12 d-flex justify-content-center mt-20">
+                        <a class="d-flex" href="">
+                            <i class="fas fa-map-marker-alt bottom-map-icon"></i>
+                            <div style=" color: #fff;">
+                                Tìm kiếm showroom<br>đại lí, trung tâm bảo hành
+                                <p>tìm nơi gần bạn nhất</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex justify-content-center mt-20">
+                        <a class="d-flex" href="">
+                            <i class="fas fa-tools bottom-tools-icon"></i>
+                            <div style=" color: #fff;">
+                                Tìm kiếm showroom<br>đại lí, trung tâm bảo hành
+                                <p>tìm nơi gần bạn nhất</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}

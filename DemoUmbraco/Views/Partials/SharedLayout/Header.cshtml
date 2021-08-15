@@ -1,0 +1,355 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    //var lienhe = Model.Descendants().ToList();
+    //var a = "aaa";
+    //var lienhe = (LienHe)Umbraco.Content(1071);
+    var Home = (Home)Umbraco.Content(1065);
+    var news = (News)Umbraco.Content(1099);
+    var login = (Login)Umbraco.Content(1126);
+    var contact = (Contact)Umbraco.Content(1139);
+    
+}
+<link href="~/css/stylehome.css" rel="stylesheet" /> 
+<header class="vf-home">
+    <!------------------------------- NavPC ------------------------------->
+    <div class="vf-home-nav container">
+        <div class="vf-home-nav-detail row ">
+            <!------------------------ NAVBAR LEFT ------------------------------>
+            <div class="vf-home-nav-option col-7">
+                <ul class="vf-nav-left-list d-flex justify-content-around align-items-center">
+                    <li class="vf-nav-left-items logo">
+                        <a href="@Home.Url()"><img src="~/img/logo.svg" alt=""></a>
+                    </li>
+                    <li id="car-menu" class="vf-nav-left-items secsion-car">
+                        <a href="">Ô TÔ</a>
+                        <div class="dropdown dropdown-car">
+                            <div class="container fade-up">
+                                <div class="header-mega-menu">
+                                    <div class="header-mega-menu-option d-flex justify-content-between">
+                                        <div class="header-mega-menu-option-left d-flex">
+                                            <button class="header-mega-menu-left-petro btn btn-link">
+                                                ĐỘNG CƠ XĂNG
+                                            </button>
+                                            <button class="header-mega-menu-left-electro btn btn-link">
+                                                ĐỘNG CƠ ĐIỆN
+                                            </button>
+                                        </div>
+                                        <div class="header-mega-menu-option-right">
+                                            <div class="header-mega-menu-option-right-chat">
+                                                <a href="">YÊU CẦU TƯ VẤN</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-mega-menu-product row">
+                                        <div class="header-mega-menu-product-info col-md-3">
+                                            <img src="~/img/FadilCar.svg" alt="">
+                                            <div class="product-name">FADIL</div>
+                                            <div class="product-sologan">Tối ưu mọi trải nghiệm</div>
+                                            <div class="product-price">Từ 336.500.000 vnđ</div>
+                                            <div class="link-detail d-flex justify-content-center">
+                                                <a style="color: rgb(99,180,230) " href="">Xem chi tiết</a>
+                                            </div>
+                                        </div>
+                                        <div class="header-mega-menu-product-info col-md-3">
+                                            <img src="~/img/LUX_A_2.0.svg" alt="">
+                                            <div class="product-name">LUX A2.0</div>
+                                            <div class="product-sologan">Tận hưởng từng khoảnh khắc</div>
+                                            <div class="product-price">Từ 881.695.000 vnđ</div>
+                                            <div class="link-detail d-flex justify-content-center">
+                                                <a style="color: rgb(99,180,230) " href="">Xem chi tiết</a>
+                                            </div>
+                                        </div>
+                                        <div class="header-mega-menu-product-info col-md-3">
+                                            <img src="~/img/LUX_SA_2.0.svg" alt="">
+                                            <div class="product-name">LUX SA2.0</div>
+                                            <div class="product-sologan">Chinh phục mọi cung đường</div>
+                                            <div class="product-price">Từ 1.146.165.000 vnđ</div>
+                                            <div class="link-detail d-flex justify-content-center">
+                                                <a style="color: rgb(99,180,230) " href="">Xem chi tiết</a>
+                                            </div>
+                                        </div>
+                                        <div class="header-mega-menu-product-info col-md-3">
+                                            <img src="~/img/President.svg" alt="">
+                                            <div class="product-name">President</div>
+                                            <div class="product-sologan">Dấu ấn người thủ lĩnh</div>
+                                            <div class="product-price">Từ 3.800.000.000 vnđ</div>
+                                            <div class="link-detail d-flex justify-content-center">
+                                                <a style="color: rgb(99,180,230) " href="">Xem chi tiết</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mega-menu-note  d-flex justify-content-center">
+                                        Chính sách bán hàng có thể được cập nhật theo chính sách của VinFast tại từng thời điểm.
+                                    </div>
+                                    <div class="mega-menu-view-all d-flex justify-content-center">
+                                        <button class="btn-viewAll btn btn-primary">
+                                            XEM TẤT CẢ XE
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="bike-menu" class="vf-nav-left-items secsion-bike">
+                        <a href="">XE MÁY ĐIỆN</a>
+                        <div class="dropdown dropdown-bike">
+                            <div class="container fade-up">
+                                <div class="header-mega-menu-car">
+                                    <div class="header-mega-menu-option d-flex justify-content-between">
+                                        <div class="header-mega-menu-option-left d-flex">
+                                            <button class="header-mega-menu-left-min btn btn-link">
+                                                PHỔ THÔNG
+                                            </button>
+                                            <button class="header-mega-menu-left-minimun btn btn-link">
+                                                TRUNG CẤP
+                                            </button>
+                                            <button class="header-mega-menu-left-max btn btn-link">
+                                                CAO CẤP
+                                            </button>
+                                        </div>
+                                        <div class="header-mega-menu-option-right">
+                                            <div class="header-mega-menu-option-right-chat">
+                                                <a href="">YÊU CẦU TƯ VẤN</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-mega-menu-product row">
+                                        <div class="header-mega-menu-product-info col-md-3">
+                                            <img src="~/img/ImpesBIKE.svg" alt="">
+                                            <div class="product-name">Impes</div>
+                                            <div class="product-sologan">Dáng sành điệu - Kiểu chất chơi</div>
+                                            <div class="product-price">Từ 14.900.000 vnđ</div>
+                                            <div class="link-detail d-flex justify-content-center">
+                                                <a style="color: rgb(99,180,230) " href="">Xem chi tiết</a>
+                                            </div>
+                                        </div>
+                                        <div class="header-mega-menu-product-info col-md-3">
+                                            <img src="~/img/LudoBIKE.svg" alt="">
+                                            <div class="product-name">Ludo</div>
+                                            <div class="product-sologan">Tỏa chất riêng - Bật cá tín</div>
+                                            <div class="product-price">Từ 12.900.000 vnđ</div>
+                                            <div class="link-detail d-flex justify-content-center">
+                                                <a style="color: rgb(99,180,230) " href="">Xem chi tiết</a>
+                                            </div>
+                                        </div>
+                                        <div class="header-mega-menu-product-info col-md-3"></div>
+                                        <div class="header-mega-menu-product-info col-md-3"></div>
+                                    </div>
+                                    <div class="mega-menu-note  d-flex justify-content-center">
+                                        Chính sách bán hàng có thể được cập nhật theo chính sách của VinFast tại từng thời điểm.
+                                    </div>
+                                    <div class="mega-menu-view-all d-flex justify-content-center">
+                                        <button class="btn-viewAll btn btn-primary">
+                                            XEM TẤT CẢ XE
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="vf-nav-left-items">
+                        <a href="">ƯU ĐÃI</a>
+                    </li>
+                    <li id="service-menu" class="vf-nav-left-items secsion-service">
+                        <a href="">DỊCH VỤ</a>
+                        <div class="dropdown dropdown-service">
+                            <div class="container fade-up">
+                                <div class="header-mega-menu-car">
+                                    <div class="header-mega-menu-option d-flex justify-content-between">
+                                        <div class="header-mega-menu-option-left d-flex">
+                                            <button class="header-mega-menu-left-serviceCar btn btn-link">
+                                                Ô TÔ
+                                            </button>
+                                            <button class="header-mega-menu-left-serviceBike btn btn-link">
+                                                XE MÁY ĐIỆN
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <div class="header-mega-menu-service d-flex">
+                                        <div class="header-mega-menu-service-list row">
+                                            <div class="col-4">
+                                                <div class="service-baoHanh">
+                                                    <h5>BẢO HÀNH & DỊCH VỤ</h5>
+                                                    <ul class="service-baoHanh-list">
+                                                        <li class="service-baoHanh-items">
+                                                            <a href="">BẢO HÀNH</a>
+                                                        </li>
+                                                        <li class="service-baoHanh-items">
+                                                            <a href="">DỊCH VỤ</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="service-doc">
+                                                    <h5>TÀI LIỆU TẢI VỀ</h5>
+                                                    <ul class="service-doc-list">
+                                                        <li class="service-doc-items">
+                                                            <a href="">Ô TÔ</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="service-baoDuong">
+                                                    <h5>DỊCH VỤ BẢO DƯỠNG</h5>
+                                                    <ul class="service-baoDuong-list">
+                                                        <li class="service-baoDuong-items">
+                                                            <a href="">BẢO DƯỠNG ĐỊNH KỲ</a>
+                                                        </li>
+                                                        <li class="service-baoDuong-items">
+                                                            <a href="">ĐẶT LỊCH BẢO DƯỠNG</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 header-mega-menu-product-info">
+                                                <img src="~/img/mega_oto.svg" alt="">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="vf-nav-left-items">
+                        <a href="">CÔNG CỤ</a>
+                        <div id="congcu-menu" class="dropdown dropdown-congcu">
+                            <div class="dropdown-congcu-list mt-20">
+                                <div class="container fade-up">
+                                    <div class=" row d-flex ">
+                                        <div class="col-md-6 d-flex justify-content-around">
+                                            <ul>
+                                                <li>
+                                                    <a class="cong-cu-link" href="">Chi phí Lăn bánh</a>
+                                                </li>
+                                                <li class="mt-20">
+                                                    <a class="cong-cu-link" href="">Thẩm định vay</a>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <a class="cong-cu-link" href="">Chi phí Lăn bánh</a>
+                                                </li>
+                                                <li class="mt-20">
+                                                    <a class="cong-cu-link" href="">Thẩm định vay</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <img src="~/img/Rectangle 6338 (3)_1627879460.png" />
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!------------------------ NAVBAR RIGHT ------------------------------->
+            <div class="vf-home-nav-right col-5">
+                <ul class="nav-right-list d-flex justify-content-around align-items-center">
+                    <li class="nav-right-items button">
+                        <a href="">
+                            <button class="btn btn-register-driver">ĐĂNG KÝ LÁI THỬ</button>
+                        </a>
+                    </li>
+                    <li class="nav-right-items cart">
+                        <a href=""><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                    <li class="nav-right-items user">
+                        <a href="@login.Url()"><i class="fas fa-user"></i></a>
+                    </li>
+                    <li class="nav-right-items language">
+                        <a href="">VN|</a>
+                        <a href="">EN</a>
+                    </li>
+                    <li class="nav-right-items menuRight">
+                        <label for="menu-right-icon" class="menu-right-open">
+                            <i class="fas fa-bars"></i>
+                            <input hidden type="checkbox" id="menu-right-icon">
+                        </label>
+                        <div class="menu-right">
+                            <label for="menu-right-close-icon" class="menu-right-close">
+                                <i class="fas fa-times"></i>
+                                <input hidden type="checkbox" name="" id="menu-right-close-icon">
+                            </label>
+                            <ul class="menu-right-list">
+                                <li class="menu-right-items">
+                                    <a class="menu-right-link" href="">HỆ THỐNG SHOW ROOM VÀ ĐẠI LÝ</a>
+                                </li>
+                                <li class="menu-right-items">
+                                    <a class="menu-right-link" href="">HỆ SINH THÁI PIN VÀ TRẠM SẠC</a>
+                                </li>
+                                <li class="menu-right-items">
+                                    <a class="menu-right-link" href="">ĐỐI TÁC TRẠM SẠC</a>
+                                </li>
+                                <li class="menu-right-items">
+                                    <a class="menu-right-link" href="@news.Url()">TIN TỨC</a>
+                                </li>
+                                <li class="menu-right-items">
+                                    <a class="menu-right-link" href="">CÂU HỎI THƯỜNG GẶP</a>
+                                </li>
+                                <li class="menu-right-items">
+                                    <a class="menu-right-link" href="@contact.Url()">LIÊN HỆ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!------------------------------- NavMOBILE ------------------------------->
+    <div class="vf-home-nav-mobile mt-10 mb-10">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="nav-mb-item nav-mb-left">
+                    <a href="@login.Url()"><i class="fas fa-user"></i></a>
+                </div>
+                <div class="nav-mb-item nav-mb-logo">
+                    <a href="@Home.Url()">
+                        <img src="~/img/logo.svg"/>
+                    </a>
+                </div>
+                <div class="nav-mb-item nav-mb-menu">
+                    <label for="nav-mobile-btn-menu" class="nav-mobile-menu">
+                        <i class="fas fa-bars"></i>
+                        <input hidden type="checkbox" name="" class="" id="nav-mobile-btn-menu">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!------------------------------- NavMOBILE right ------------------------------->
+        <div class="nav-mb-right">
+            <ul class="nav-mb-list">
+                <li class="col-12 mt-20 nav-mb-items">
+                    <label for="nav-mobile-btn-close" class="nav-mobile-close">
+                        <i style="color: black;" class="fas fa-times"></i>
+                        <input hidden type="checkbox" name="" class="" id="nav-mobile-btn-close">
+                    </label>
+                </li>
+                <li class="mt-20 nav-mb-items">
+                    <a href=""><h5>Ô TÔ</h5></a>
+                </li>
+                <li class="mt-20 nav-mb-items">
+                    <a href=""><h5>XE MÁY ĐIỆN</h5></a>
+                </li>
+                <li class="mt-20 nav-mb-items">
+                    <a href=""><h5>ƯU ĐÃI</h5></a>
+                </li>
+                <li class="mt-20 nav-mb-items">
+                    <a href=""><h5>DỊCH VỤ</h5></a>
+                </li>
+                <li class="mt-20 nav-mb-items">
+                    <a href=""><h5>CÔNG CỤ</h5></a>
+                </li>
+                <li class="mt-20 nav-mb-items">
+                    <a href=""><button class="btn btn-primary">Đăng ký lái thử</button></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

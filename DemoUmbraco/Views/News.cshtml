@@ -1,0 +1,141 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.News>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+    Layout = "webBaseTemplates.cshtml";
+
+    var news = (News)Model.Root();
+    var newsdetails = news.Children<NewsDetails>().OrderByDescending(x => x.CreateDate);
+
+    var pageSize = 6;
+
+    if (Model.HasValue("numberOfItemsPerPage"))
+    {
+        pageSize = Model.Value<int>("numberOfItemsPerPage");
+    }
+
+    var page = 1; int.TryParse(Request.QueryString["page"], out page);
+
+    @* This line assumes you have a property called lastUpdated*@
+    var items = Model.Children().OrderByDescending(x => x.Value("lastUpdated"));
+    @* Remove the line above and use this line to keep it simple *@
+    @* var items = Model.Children()); *@
+
+
+    var totalPages = (int)Math.Ceiling((double)items.Count() / (double)pageSize);
+
+    if (page > totalPages)
+    {
+        page = totalPages;
+    }
+    else if (page < 1)
+    {
+        page = 1;
+    }
+
+
+}
+<section class="slider1">
+    <div class="owl-carousel owl-theme aaaa">
+        <div class="item item-slider">
+            <img style="height: auto;" src="~/img/Slider-post1.jpg" alt="">
+            <a href=""><button class="btn-view-slider btn btn-primary">View</button></a>
+            <a href=""><h3 class="title-siler">Đánh giá xe VinFast dáng đẹp lướt êm</h3></a>
+        </div>
+        <div class="item item-slider">
+            <img style="height: auto;" src="~/img/slider-post2.jpg" alt="">
+            <a href=""><button class="btn-view-slider btn btn-primary">View</button></a>
+            <a href=""><h3 class="title-siler">Tổng hợp các đại lí xe máy điện</h3></a>
+        </div>
+        <div class="item item-slider">
+            <img style="height: auto;" src="~/img/slider-post-3.jpg" alt="">
+            <a href=""><button class="btn-view-slider btn btn-primary">View</button></a>
+            <a href=""><h3 class="title-siler">Những lợi ích và rào cản khi triển khai xe buýt điện</h3></a>
+        </div>
+        <div class="item item-slider">
+            <img style="height: auto;" src="~/img/slider-post4.jpg" alt="">
+            <a href="blog.html"><button class="btn-view-slider btn btn-primary">View</button></a>
+            <a href="blog.html"><h3 class="title-siler">Tìm hiểu hệ sinh thái trạm sạc xe điện</h3></a>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="tab-content container">
+        <div class="row">
+            <div class="col-md-7 mt-10">
+                <ul class="nav nav-tabs">
+                    <li class="active mr-20"><a style="color: rgb(123,125,127);" data-toggle="tab" href="#home">Tất cả</a></li>
+                    <li class="mr-20"><a style="color: rgb(123,125,127);" data-toggle="tab" href="#congty">Công Ty</a></li>
+                    <li class="mr-20"><a style="color: rgb(123,125,127);" data-toggle="tab" href="#xuhuong">Xu hướng chung</a></li>
+                    <li class="mr-20"><a style="color: rgb(123,125,127);" data-toggle="tab" href="#congdong">Cộng đồng</a></li>
+                    <li class=""><a style="color: rgb(123,125,127);" data-toggle="tab" href="#about">Báo chí viết về Vinfast</a></li>
+                </ul>
+            </div>
+            <div class="col-md-5 col-12">
+                <form action="@Model.Url()" method="get" class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit">Tìm kiếm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div id="home" class="tab-pane active mb-50 container">
+            <div class="row">
+                @foreach (var itemdetail in newsdetails.Skip((page - 1) * pageSize).Take(pageSize))
+                {
+                    <div id="one" class="col-md-4 col-12">
+                        <div class="viewpost b-solid mt-20">
+                            <a href="@itemdetail.Url()"><img class="img-100 br-3" src="@itemdetail.Image.LocalCrops" alt=""></a>
+                            <div class="title-post m-15">
+                                <a href="@itemdetail.Url()">@itemdetail.PageTitle</a>
+                            </div>
+                            <div style="margin:0px 15px">
+                                @{
+                                    if (itemdetail.HasValue("SubTitle"))
+                                    {
+                                        <p>@(itemdetail.Value<string>("SubTitle").Truncate(20))</p>
+                                    }
+                                }
+                            </div>
+                            <div class="detail-post d-flex justify-content-between mt-10 m-15">
+                                <a href=""><p>Công ty</p></a>
+                                <span>dd/mm/yyyy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
+            @if (totalPages > 1)
+            {
+                <div class="pagination d-flex justify-content-center mt-50">
+                    <ul>
+                        @if (page > 1)
+                        {
+                            <button class="btn btn-primary"><a href="?page=@(page-1)">Prev</a></button>
+                        }
+                        @for (int p = 1; p < totalPages + 1; p++)
+                        {
+                            <button class="@(p == page ? "active" : string.Empty) btn btn-clear btn-page">
+                                <a href="?page=@p">@p</a>
+                            </button>
+                        }
+                        @if (page < totalPages)
+                        {
+                            <button class="btn btn-primary"><a href="?page=@(page+1)">Next</a></button>
+                        }
+                    </ul>
+                </div>
+            }
+        </div>
+       
+
+            
+    </div>
+</section>
+
+<link href="~/css/news.css" rel="stylesheet" />
+<script src="~/scripts/news.js"></script>

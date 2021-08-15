@@ -1,0 +1,553 @@
+*, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.back-ground {
+    background-image: linear-gradient(#fff, rgb(245,250,255) ) !important;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.mt-5 {
+    margin-top: 5px !important;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.line-bd {
+    border: 1px solid rgb(223,223,223);
+}
+
+.br-3 {
+    border-radius: 3px;
+}
+
+.b-solid {
+    border: 1px solid rgb(223,223,223);
+    border-radius: 5px;
+}
+
+.img-100 {
+    width: 100%;
+    height: auto;
+}
+
+.detail-post {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.m-15 {
+    margin: 15px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+/* -----------------------------NAVBAR PC------------------------------------------ */
+.vf-home-nav {
+    position: relative;
+    display: block;
+    font-size: 13px;
+}
+
+.vf-home-nav-detail {
+    margin-top: 17px;
+}
+
+.vf-nav-left-list {
+    font-weight: 500;
+}
+
+.secsion-car, .secsion-service, .secsion-bike {
+    position: relative;
+}
+
+.dropdown {
+    border-top: 1px solid rgb(187, 187, 187);
+    position: fixed;
+    left: 0;
+    top: 71px;
+    width: 100%;
+    display: none;
+    z-index: 3;
+    background-color: #fff;
+    
+}
+
+.vf-home-nav-mobile {
+    display: none;
+}
+
+.btn-register-driver {
+    border: 1px solid rgb(0,123,255);
+    background-color: #fff;
+    color: rgb(0,123,255);
+}
+.btn-register-driver:hover {
+    background-color: rgb(0,123,255);
+    color: #fff;
+}
+
+/* -----------------------------NAVBAR MOBILE------------------------------------------ */
+@media (max-width: 1025px) {
+    .vf-home-nav {
+        display: none;
+    }
+
+    .vf-home-nav-mobile {
+        display: block;
+        position: relative;
+    }
+}
+
+.nav-mb-right {
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    transition: all 0.3s;
+    z-index: 2;
+    transform: translateX(100%);
+}
+
+    .nav-mb-right.active {
+        transform: translateX(0%);
+    }
+
+.nav-mb-list {
+    margin-left: 50px;
+}
+
+.nav-mobile-close {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+
+/* -------------------------MEGA MENU CAR AND BIKE---------------------------------------------- */
+
+.header-mega-menu-option {
+    border-bottom: 1px solid rgb(187, 187, 187);
+    padding-top: 5px;
+}
+
+.header-mega-menu-product {
+    margin-top: 17px;
+}
+
+.product-name {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.product-sologan {
+    font-weight: 400;
+    color: rgb(112, 112, 112);
+    margin-bottom: 10px;
+}
+
+.product-price {
+    margin-bottom: 20px;
+}
+
+.link-detail {
+    padding-top: 5px;
+    font-size: 15px;
+    border-top: 1px solid rgb(187, 187, 187);
+}
+
+.mega-menu-note {
+    margin: 20px 0px 30px 0px;
+}
+
+.btn-viewAll {
+    width: 500px;
+}
+
+.dropdown-bike {
+    background-color: #fff;
+    display: none;
+    z-index: 4;
+}
+
+.mega-menu-view-all {
+    margin-bottom: 30px;
+}
+
+.vf-home-nav-option > ul > li:hover > .dropdown {
+    display: block;
+}
+
+#car-menu, #bike-menu {
+    position: relative;
+}
+
+    #car-menu::after {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        content: '';
+        top: 22px;
+        left: -6px;
+    }
+
+    #bike-menu::after {
+        position: absolute;
+        width: 95px;
+        height: 40px;
+        content: '';
+        top: 22px;
+        left: -6px;
+    }
+
+#service-menu::after {
+    position: absolute;
+    width: 95px;
+    height: 40px;
+    content: '';
+    top: 22px;
+    left: -6px;
+}
+
+#congcu-menu::after {
+    position: absolute;
+    width: 70px;
+    height: 40px;
+    content: '';
+    top: -30px;
+    right: 690px;
+}
+
+
+/* -------------------------MEGA MENU SERVICE---------------------------------------------- */
+
+.service-baoHanh, .service-baoDuong, .service-doc {
+    margin: 20px 0px 0px 10px;
+}
+
+.service-baoHanh-list, .service-baoDuong-list, .service-doc-list {
+    margin: 30px 0px 20px 15px;
+    font-weight: 400;
+    color: rgb(147, 147, 147);
+}
+
+.service-baoDuong-items, .service-doc-items, .service-baoHanh-items {
+    margin-top: 8px;
+}
+/* -------------------------MEGA MENU CONG CU---------------------------------------------- */
+.dropdown-congcu {
+    z-index: 5;
+    right: 0px;
+    left: 0px;
+    position: fixed;    
+}
+
+.dropdown-congcu-link {
+    color: #fff !important;
+}
+
+.cong-cu-link {
+    font-size: 15px;
+}
+
+/* -------------------------MENU RIGHT---------------------------------------------- */
+.menuRight {
+    position: relative;
+}
+
+.menu-right {
+    transform: translateX(94%);
+    transition: all 0.3s;
+    position: fixed;
+    top: 72px;
+    background-color: rgb(44,114,198);
+    width: 40%;
+    height: 100%;
+    z-index: 1;
+}
+
+    .menu-right.active {
+        transform: translateX(-26%);
+        z-index: 3;
+    }
+
+.menu-right-list {
+    margin: 10px 25px 0px 25px;
+}
+
+.menu-right-items {
+    font-size: 15px;
+    margin: 10px 0px 5px 0px;
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+.menu-right-link {
+    color: #fff;
+}
+
+    .menu-right-link:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
+.fa-times {
+    margin: 20px 0px 0px 20px;
+    color: #fff;
+}
+
+/* -------------------------BANNER---------------------------------------------- */
+.vf-home-banner-img {
+    width: 100%;
+}
+
+/* -------------------------TABLE---------------------------------------------- */
+
+.table {
+    margin-top: 50px;
+}
+
+.table-center {
+    border-right: 1px solid rgb(112, 112, 112);
+    border-left: 1px solid rgb(112, 112, 112);
+}
+
+/* -------------------------NEW PRODUCT---------------------------------------------- */
+.new-product {
+    padding-bottom: 60px;
+}
+
+.new-product-title {
+    font-weight: 350;
+    margin: 50px 0px 40px 0px;
+}
+
+.right-product, .left-product {
+    background-color: #fff;
+}
+
+.bike-name-price {
+    margin-top: 20px;
+}
+
+.bike-price {
+    color: blue;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.info-bike {
+    border-bottom: 1px solid rgb(231,231,231);
+}
+
+.uuDai-bike {
+    margin: 20px 0px 30px 0px;
+}
+
+.btn-buy {
+    margin-bottom: 30px;
+}
+
+/* -------------------------BEST SELLER PRODUCT---------------------------------------------- */
+.best-seller-title {
+    font-weight: 350;
+    margin-bottom: 40px;
+}
+
+.slider {
+    padding-bottom: 60px;
+}
+
+.btn-slider {
+    margin-top: 20px;
+}
+/* -------------------------POLICY---------------------------------------------- */
+
+.policy-power-title {
+    font-weight: 300;
+}
+
+.policy-img {
+    height: auto;
+    width: 100%;
+}
+
+.btn-pilicy {
+    margin: 35px 0px 0px 0px;
+}
+/* -------------------------tutorial--------------------------------------------- */
+.tutorial {
+    margin-bottom: 50px;
+}
+
+.tutorial-title {
+    margin: 35px 0px 35px 0px;
+}
+
+.tutorial-title-h1 {
+    font-weight: 300;
+}
+
+.tutorial-card {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.tutorial-card-link {
+    font-size: 20px;
+    color: blue !important;
+    border-bottom: 3px solid blue;
+    font-weight: 400;
+}
+
+/* -------------------------Banner2--------------------------------------------- */
+
+.vf-home-last-banner {
+    position: relative;
+}
+
+.vf-home-last-banner-img {
+    width: 100%;
+}
+
+
+.registration {
+    background-color: rgb(245,250,255);
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.registration-main {
+    background-color: #fff;
+}
+
+.registration-title {
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.register-info {
+    margin-top: 15px;
+}
+
+.register-input {
+    border: 1px solid rgb(231,231,231);
+    border-radius: 2px;
+    outline: none;
+}
+
+.btn-drop {
+    width: 195px !important;
+}
+
+.btn-register {
+    margin-top: 40px;
+}
+
+
+/* --------------------------footer------------------------------ */
+footer {
+    padding-top: 50px;
+    border-top: 4px solid rgb(44,114,198)
+}
+
+.footer-logo {
+    margin: 30px auto 50px;
+    display: block;
+    max-width: 122px
+}
+
+.footer-about-VF {
+    margin: 6px 0px;
+    font-size: 14px;
+    font-weight: 350;
+}
+
+.footer-relations {
+    margin: 75px 0px 50px 0px;
+}
+
+.hotline-phone, .hotline-email {
+    border: 1px solid black;
+    margin: 0px 20px;
+}
+
+.footer-language, .footer-connect {
+    margin: 0px 20px;
+}
+
+.footer-mb {
+    display: none;
+    z-index: 5;
+    color: #333;
+}
+
+@media (max-width: 1025px) {
+    .footer-pc {
+        display: none;
+    }
+
+    .footer-mb {
+        display: block;
+    }
+}

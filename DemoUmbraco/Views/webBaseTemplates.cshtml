@@ -1,0 +1,47 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Web
+@{
+    Layout = null;
+}
+
+@* the fun starts here *@
+
+<!DOCTYPE html>
+<html lang="en">
+@{
+    var base_url = HttpContext.Current.Request.Url.Host;
+}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.min.css">
+    <title>3Si UI VinFast</title>
+    <link href="~/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/stylehome.css" rel="stylesheet" />
+    <script src="~/scripts/jquery-3.2.1.slim.min.js"></script>
+</head>
+<body>
+    <!-------------------------------Header ------------------------------->
+    @{Html.RenderAction("RenderHeader", "SiteSharedLayout"); }
+
+    <div class="content">
+        @RenderBody()
+    </div>
+
+    <!------------------------------footer -----------------------------
+    @{Html.RenderAction("RenderFooter", "SiteSharedLayout"); }
+
+    <!-- bootstrap -->
+
+    <script src="~/owlcarousel/owl.carousel.min.js"></script>
+    <script src="~/scripts/popper.min.js"></script>
+    <script src="~/scripts/bootstrap.min.js"></script>
+    <script src="~/scripts/index.js"></script>
+</body>
+</html>

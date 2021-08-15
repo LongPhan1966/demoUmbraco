@@ -1,0 +1,213 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    //var lienhe = Model.Descendants().ToList();
+    //var a = "aaa";
+    //var lienhe = (LienHe)Umbraco.Content(1071);
+    var Home = (Home)Umbraco.Content(1065);
+    var news = (News)Umbraco.Content(1099);
+}
+
+<!-- Footer -->
+<div>
+    <footer class="container-fluid footer-pc">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="~/img/logofooter.png" alt="">
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <p>Về VinFast</p>
+                    <ul>
+                        <li class="footer-about-VF"><a href="">Giới thiệu về VinFast</a></li>
+                        <li class="footer-about-VF"><a href="@news.Url()">Tin tức</a></li>
+                        <li class="footer-about-VF"><a href="">Ưu đãi</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <p>Xe ô tô</p>
+                    <ul>
+                        <li class="footer-about-VF"><a href="">VF e34</a></li>
+                        <li class="footer-about-VF"><a href="">President</a></li>
+                        <li class="footer-about-VF"><a href="">LUX SA2.0</a></li>
+                        <li class="footer-about-VF"><a href="">LUX A2.0</a></li>
+                        <li class="footer-about-VF"><a href="">Fadil</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <p>Xe máy điện</p>
+                    <ul>
+                        <li class="footer-about-VF"><a href="">Theon</a></li>
+                        <li class="footer-about-VF"><a href="">Klara S</a></li>
+                        <li class="footer-about-VF"><a href="">Feliz</a></li>
+                        <li class="footer-about-VF"><a href="">Impes</a></li>
+                        <li class="footer-about-VF"><a href="">Ludo</a></li>
+                        <li class="footer-about-VF"><a href="">Klara A2</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <p>Hỗ trợ</p>
+                    <ul>
+                        <li class="footer-about-VF"><a href="">Câu hỏi thường gặp</a></li>
+                        <li class="footer-about-VF"><a href="">Hệ thống phân phối</a></li>
+                        <li class="footer-about-VF"><a href="">Đặt lịch bảo dưỡng</a></li>
+                        <li class="footer-about-VF"><a href="">Liên hệ</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <p>Pháp lý</p>
+                    <ul>
+                        <li class="footer-about-VF"><a href="">Quy chế hoạt động sàn TMDT</a></li>
+                        <li class="footer-about-VF"><a href="">Chính sách quyền riêng tư</a></li>
+                        <li class="footer-about-VF"><a href="">Các điều kiện và điều khoản</a></li>
+                        <li class="footer-about-VF"><a href="">Điều khoản sử dụng cookie</a></li>
+                        <li class="footer-about-VF"><a href="">Miễn trừ trách nhiệm</a></li>
+                        <li class="footer-about-VF"><a href="">Chính sách bảo mật thanh toán</a></li>
+                        <li class="footer-about-VF"><a href="">Chính sách đổi trả</a></li>
+                        <li class="footer-about-VF"><a href="">Chính sách vận chuyển</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-relations d-flex row">
+                <div class="footer-relations-left col-md-6 d-flex">
+                    <span>Hotline & Email CSKH</span>
+                    <ul class="hotline-list d-flex">
+                        <li class="hotline-phone">
+                            <a href="" class="d-flex">
+                                <div class="hotline-phone-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="hotline-phone-number">
+                                    1900 232389
+                                </div>
+                            </a>
+                        </li>
+                        <li class="hotline-email">
+                            <a href="" class="d-flex">
+                                <div class="hotline-email-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="hotline-email-address">
+                                    <p>cskh@vinfast.vn</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-relations-right col-md-6">
+                    <ul class="d-flex">
+                        <li class="footer-language d-flex">
+                            <span style="margin-right: 10px;">Ngôn ngữ</span>
+                            <p>VN | EN</p>
+                        </li>
+                        <li class="footer-connect">
+                            <a href="" class="d-flex">
+                                <span style="margin-right: 10px;">Kết nối với VinFast</span>
+                                <div style="margin-right: 10px;" class="connect-facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </div>
+                                <div style="margin-right: 10px;" class="connect-youtube">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <footer class="footer-mb mb-50">
+        <div class="footer-head">
+            <div class="footer-logo">
+                <img src="~/img/logofooter.png" alt="">
+            </div>
+            <div class="row footer-mb-content d-flex">
+                <div class="col-12 btn-group mt-20 justify-content-center">
+                    <button style="width: 315px" class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                        Về VinFast
+                    </button>
+                    <div style="width: 319px" class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+                        <a class="dropdown-item" href="#">Giới thiệu về VinFast</a>
+                        <a class="dropdown-item" href="@news.Url()">Tin tức</a>
+                        <a class="dropdown-item" href="#">Ưu đãi</a>
+                    </div>
+                </div>
+                <div class="col-12 btn-group mt-20  justify-content-center">
+                    <button style="width: 315px" class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                        Xe Ô Tô
+                    </button>
+                    <div style="width: 319px" class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+                        <a class="dropdown-item" href="#">VF e34</a>
+                        <a class="dropdown-item" href="#">President</a>
+                        <a class="dropdown-item" href="#">LUX SA2.0</a>
+                        <a class="dropdown-item" href="#">LUX A2.0</a>
+                        <a class="dropdown-item" href="#">Fadil</a>
+                    </div>
+                </div>
+                <div class="col-12 btn-group mt-20  justify-content-center">
+                    <button style="width: 315px" class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                        Xe Máy điện
+                    </button>
+                    <div style="width: 319px" class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+                        <a class="dropdown-item" href="#">Theon</a>
+                        <a class="dropdown-item" href="#">Klara S</a>
+                        <a class="dropdown-item" href="#">Feliz</a>
+                        <a class="dropdown-item" href="#">Impes</a>
+                        <a class="dropdown-item" href="#">Ludo</a>
+                        <a class="dropdown-item" href="#">Klara A</a>
+                    </div>
+                </div>
+                <div class="col-12 btn-group mt-20  justify-content-center">
+                    <button style="width: 315px" class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                        Hỗ trợ
+                    </button>
+                    <div style="width: 319px" class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+                        <a class="dropdown-item" href="#">Câu hỏi thương gặp</a>
+                        <a class="dropdown-item" href="#">Hệ thống phân phối</a>
+                        <a class="dropdown-item" href="#">Đặt lịch bảo dưỡng</a>
+                        <a class="dropdown-item" href="
+                </div>
+                <div class="col-12 btn-group mt-20  justify-content-center">
+                    <button style="width: 315px" class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                        Pháp lý
+                    </button>
+                    <div style="width: 319px" class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+                        <a class="dropdown-item" href="#">Quy chế hoạt động sàn TMDT</a>
+                        <a class="dropdown-item" href="#">Chính sách quyền riêng tư</a>
+                        <a class="dropdown-item" href="#">Các điều kiện và điều khoản</a>
+                        <a class="dropdown-item" href="#">Điều khoản sử dụng cookie</a>
+                        <a class="dropdown-item" href="#">Miễn trừ trách nhiệm</a>
+                        <a class="dropdown-item" href="#">Chính sách bảo mật thanh toán</a>
+                        <a class="dropdown-item" href="#">Chính sách đổi trả</a>
+                        <a class="dropdown-item" href="#">Chính sách vận chuyển</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-bottom mt-20">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-around">
+                    <a style="width: 120px" class="d-flex line-bd justify-content-around align-items-center br-3" href="">
+                        <i class="fas fa-phone-alt"></i>
+                        <p class="mt-10">Phone</p>
+                    </a>
+                    <a style="width: 120px" class="d-flex line-bd justify-content-around align-items-center br-3" href="">
+                        <i class="fas fa-envelope"></i>
+                        <p class="mt-10">Email</p>
+                    </a>
+                </div>
+                <div class="col-md-6">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>

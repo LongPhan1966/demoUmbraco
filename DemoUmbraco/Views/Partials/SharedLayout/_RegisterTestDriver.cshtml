@@ -1,0 +1,52 @@
+﻿@using (Html.BeginUmbracoForm("RegisterForm", "TestDriver", FormMethod.Post) )
+{
+    <div class="registration">
+        <h2 class="registration-title d-flex justify-content-center">ĐĂNG KÝ TRẢI NGHIỆM XE</h2>
+        <div class="container registration-main">
+            <div class="row">
+                <div class="registration-lable col-md-8 col-12">
+                    <img width="100%" class="registration-img" src="./img/register.png" alt="">
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="register-info d-flex justify-content-between">
+                        <label for="">Họ Tên</label>
+                        <input class="register-input" type="text" name="registerName" id="registerName" placeholder="Họ Tên" size="20" maxlength="80">
+                    </div>
+                    <div class="register-info d-flex justify-content-between">
+                        <label for="">Số điện thoại</label>
+                        <input class="register-input" type="text" name="registerPhone" id="registerPhone" placeholder="Tối thiểu 10 ký tự" size="20" maxlength="80">
+                    </div>
+                    <div class="register-info drop-menu d-flex justify-content-between">
+                        <Label>Tỉnh thành</Label>
+                        <button type="button" class="btn-drop btn dropdown-toggle" data-toggle="dropdown">
+                            Chọn tỉnh thành
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Hà Nội</a>
+                            <a class="dropdown-item" href="#">Thành phố Hồ Chí Minh</a>
+                            <a class="dropdown-item" href="#">Đà Nẵng</a>
+                            <a class="dropdown-item">Huế</a>
+                        </div>
+                    </div>
+                    <div class="register-info drop-menu d-flex justify-content-between">
+                        <Label>Show Room</Label>
+                        <button type="button" class="btn-drop btn dropdown-toggle" data-toggle="dropdown">
+                            Chọn show room
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Hà Nội</a>
+                            <a class="dropdown-item" href="#">Thành phố Hồ Chí Minh</a>
+                            <a class="dropdown-item" href="#">Đà Nẵng</a>
+                            <a class="dropdown-item">Huế</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <button class="btn-register col-12 btn btn-secondary">
+                            ĐĂNG KÝ LÁI THỬ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

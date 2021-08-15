@@ -1,0 +1,143 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.NewsDetails>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+    Layout = "webBaseTemplates.cshtml";
+}
+<link href="~/css/blog.css" rel="stylesheet" />
+<link href="~/css/stylehome.css" rel="stylesheet" />
+<div class="container mt-50">
+    <div class="row">
+        <div class="col-md-8 col-12">
+            <ul class="nav nav-tabs">
+                <li class="active mr-20"><a style="color: rgb(123,125,127);" data-toggle="tab" href="#congty">Công Ty</a></li>
+                <li class="mr-20"><a style="color: rgb(123,125,127);" data-toggle="tab" href="#xuhuong">Xu hướng chung</a></li>
+                <li class="mr-20"><a style="color: rgb(123,125,127);" data-toggle="tab" href="#congdong">Cộng đồng</a></li>
+                <li class=""><a style="color: rgb(123,125,127);" data-toggle="tab" href="#about">Báo chí viết về Vinfast</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="congty" class="tab-pane active mb-50">
+                    <div class="title-blog mb-10">
+                        <h4 class="mt-20">@Model.PageTitle.ToString()</h4>
+                        <div class="detail d-flex justify-content-between">
+                            <p class="fs-13 fw-300">dd/mm/yyyy</p>
+                            <p class="fs-13 fw-300">nguoi dang</p>
+                            <p class="fs-13 fw-300">luot xem</p>
+                        </div>
+                    </div>
+                    <div class="relations">
+                        <ul class="relations-list d-flex justify-content-end">
+                            <li class="relations-items mr-20 fs-13">Chia sẻ bài viết này</li>
+                            <li class="relations-items mr-20 fs-13">
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="relations-items mr-20 fs-13">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="relations-items mr-20 fs-13">
+                                <a href=""><i class="fas fa-envelope"></i></a>
+                            </li>
+                            <li class="relations-items mr-20 fs-13">
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="blog mt-20 mb-50 pb-20">
+                        @{
+                            if (Model.HasValue("Content"))
+                            {
+                                <p>@Model.Value("Content")</p>
+                            }
+                        }
+                    </div>
+
+
+                    <div class="author">
+                        <div class="row d-flex justify-content-between mt-10">
+                            <div class="col-6 d-flex">
+                                <div class="avatar">
+                                    <img src="~/img/user.png" alt="">
+                                </div>
+                                <div class="info-author">
+                                    <span>
+                                        v.tuyenvd3
+                                        <p style="font-size: 12px;" class="fw-300">Chuyên viên truyền thông</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <span class="fw-300 mt-5">
+                                    Mục Công ty
+                                    <p style="font-size: 12px;" class="fw-300">dd/mm/yyyy</p>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <p style="font-size: 12px; margin-left: 20px;" class="fw-300 mt-10">Tag: </div>
+
+                        <ul class="relations-list d-flex justify-content-end">
+                            <li class="relations-items mr-20 fs-13">Chia sẻ bài viết này</li>
+                            <li class="relations-items mr-20 fs-13">
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="relations-items mr-20 fs-13">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="relations-items mr-20 fs-13">
+                                <a href=""><i class="fas fa-envelope"></i></a>
+                            </li>
+                            <li class="relations-items mr-20 fs-13">
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div class="another-news">
+                <div class="another-news-title">
+                    <h3 class="fs-15">PHỔ BIẾN</h3>
+                </div>
+                <div class="new-list mt-20 mb-20">
+                    <div class="new-item d-flex mb-20">
+                        <a href=""><img class="br-3" src="~/img/VF33_front.jpg" alt=""></a>
+                        <div class="info-new-items">
+                            <div class="d-flex justify-content-between detail-new-items">
+                                <p class="fs-13">Công ty</p>
+                                <p class="fs-13">dd/mm/yyyy</p>
+                            </div>
+                            <div class=" title-new-items mt-10">
+                                <a style="font-weight: bold; line-height: 13px;" class="fs-13" href="">VinFast ra mắt 3 dòng ô tô điện tự lái, khẳng địn...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-item d-flex mb-20">
+                        <a href=""><img class="br-3" src="~/img/President_11 (1).jpg" alt=""></a>
+                        <div class="info-new-items">
+                            <div class="d-flex justify-content-between detail-new-items">
+                                <p class="fs-13">Xu hướng chung</p>
+                                <p class="fs-13">dd/mm/yyyy</p>
+                            </div>
+                            <div class=" title-new-items mt-10">
+                                <a style="font-weight: bold; line-height: 13px;" class="fs-13" href="">VinFast President - phiên bản giới hạn dành riê...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-item d-flex mb-20">
+                        <a href=""><img class="br-3" src="~/img/Thong-so-ky-thuat-o-to-dien-VinFast-VF-e34-chi-tiet-nhat_1626161954.png" alt=""></a>
+                        <div class="info-new-items">
+                            <div class="d-flex justify-content-between detail-new-items">
+                                <p class="fs-13">Xu hướng chung</p>
+                                <p class="fs-13">dd/mm/yyyy</p>
+                            </div>
+                            <div class=" title-new-items mt-10">
+                                <a style="font-weight: bold; line-height: 13px;" class="fs-13" href="">Thông số kĩ thuật ô tô điện VinFast e34...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

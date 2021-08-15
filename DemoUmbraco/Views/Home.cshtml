@@ -1,0 +1,246 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using ContentModels = Umbraco.Web.PublishedModels.Home;
+@{
+    Layout = "webBaseTemplates.cshtml";
+}
+<link href="~/css/stylehome.css" rel="stylesheet" />
+@* the fun starts here *@
+
+<!------------------------------- BANNER ------------------------------->
+
+<section class="vf-home-banner">
+    <img class="vf-home-banner-img" src="./img/banner-default.jpg" alt="">
+</section>
+
+
+<!------------------------------- TABLE ------------------------------->
+<div class="table">
+    <div class="container">
+        <div class="row col-12 table-col" ">
+            <div class="col-md-4">
+                <img style="height: auto" src="./img/pay.png" alt=""><br>
+                <p class="col-text">THANH TOÁN</p><br>
+                <span class="color-blue">
+                    KHI NHẬN XE
+                </span>
+            </div>
+            <div class="col-md-4 table-center">
+                <img src="./img/sales.png" alt=""><br>
+                <p class="col-text color-blue">ƯU ĐÃI TRẢ GÓP</p><br>
+                <span class="">
+                    LÃI XUẤT 0%
+                </span>
+            </div>
+            <div class="col-md-4">
+                <img src="./img/car.png" alt=""><br>
+                <p class="col-text">NHẬN XE TẠI HỆ THÔNG SHOWROOM</p><br>
+                <span class="color-blue">
+                    TRÊN TOÀN QUỐC
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------------------------- Product ------------------------------->
+<div class="back-ground">
+    <!------------------------------- NEW Product ------------------------------->
+    <div class="new-product">
+        <h2 class="new-product-title d-flex justify-content-center">S Ả N   P H Ẩ M   M Ớ I</h2>
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-6 col-12 t-center left-product">
+                    <div class="left-product-img">
+                        <img width="100%" src="./img/bike-klara-a2.jpg" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="info-bike">
+                            <div class="bike-name-price d-flex justify-content-between">
+                                <h4 class="bike-name">KLARA A2 - 2021</h4>
+                                <span class="bike-price">
+                                    26.900.000 vnđ.
+                                </span>
+                            </div>
+                            <p style="font-size: 13px;">Giá đã bao gồm sạc và ắc-quy</p>
+                        </div>
+
+                        <div class="uuDai-bike d-flex justify-content-between">
+                            <span class="uuDai-bike-name">Ưu đãi trả góp 0%</span>
+                            <span class="uuDai-bike-price">Chỉ từ 1.259.604 </span>
+                        </div>
+                        <div class="btn-buy d-flex justify-content-center">
+                            <button class="btn btn-primary">
+                                MUA NGAY
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 right-product">
+                    <div class="left-product-img">
+                        <img width="100%" src="./img/bike-feliz.jpg" alt="">
+                    </div>
+                    <div class="container">
+                        <div class="info-bike">
+                            <div class="bike-name-price d-flex justify-content-between">
+                                <h4 class="bike-name">FELIZ</h4>
+                                <span class="bike-price">
+                                    24.900.000 vnđ
+                                </span>
+                            </div>
+                            <p style="font-size: 13px;">Giá đã bao gồm sạc và ắc-quy</p>
+                        </div>
+
+                        <div class="uuDai-bike d-flex justify-content-between">
+                            <span class="uuDai-bike-name">Ưu đãi trả góp 0%</span>
+                            <span class="uuDai-bike-price">Chỉ từ 1.165.953 vnđ</span>
+                        </div>
+                        <div class="btn-buy d-flex justify-content-center">
+                            <button class="btn btn-primary">
+                                MUA NGAY
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------  BEST SALER Slider -------------------------------->
+    <div class="slider container">
+        <h2 class="best-seller-title d-flex justify-content-center">SẢN PHẨM BÁN CHẠY</h2>
+        <div class="container owl-carousel owl-carousel-3  owl-theme">
+            <div class="item col-12">
+                <img src="./img/felizSLIDER.png" alt="">
+                <div class="slider-name-product">
+                    <h3>Feliz - Đỏ</h3>
+                </div>
+                <div class="slider-price-product d-flex justify-content-between ">
+                    <span>Giá bán</span>
+                    <span style="font-weight :bold ; color: rgb(44,114,198);">14.900.000 VND</span>
+                </div>
+                <div class="slider-benefit-product d-flex justify-content-between ">
+                    <span>Ưu đãi</span>
+                    <span style="font-weight :bold">Trả góp lãi xuất 0%</span>
+                </div>
+                <button class="btn-slider btn btn-primary container">MUA NGAY</button>
+            </div>
+            <div class="item col-12">
+                <img src="./img/impres-blueSLIDER.jpg" alt="">
+                <div class="slider-name-product">
+                    <h3>Feliz - Đỏ</h3>
+                </div>
+                <div class="slider-price-product d-flex justify-content-between ">
+                    <span>Giá bán</span>
+                    <span style="font-weight :bold ; color: rgb(44,114,198);">14.900.000 VND</span>
+                </div>
+                <div class="slider-benefit-product d-flex justify-content-between ">
+                    <span>Ưu đãi</span>
+                    <span style="font-weight :bold">Trả góp lãi xuất 0%</span>
+                </div>
+                <button class="btn-slider btn btn-primary container">MUA NGAY</button>
+            </div>
+            <div class="item col-12">
+                <img src="./img/ludo-redSLIDER.jpg" alt="">
+                <div class="slider-name-product">
+                    <h3>Feliz - Đỏ</h3>
+                </div>
+                <div class="slider-price-product d-flex justify-content-between ">
+                    <span>Giá bán</span>
+                    <span style="font-weight :bold ; color: rgb(44,114,198);">14.900.000 VND</span>
+                </div>
+                <div class="slider-benefit-product d-flex justify-content-between ">
+                    <span>Ưu đãi</span>
+                    <span style="font-weight :bold">Trả góp lãi xuất 0%</span>
+                </div>
+                <button class=" btn-slider btn btn-primary container">MUA NGAY</button>
+            </div>
+            <div class="item col-12">
+                <img src="./img/klarasSLIDER.png" alt="">
+                <div class="slider-name-product">
+                    <h3>Feliz - Đỏ</h3>
+                </div>
+                <div class="slider-price-product d-flex justify-content-between ">
+                    <span>Giá bán</span>
+                    <span style="font-weight :bold ; color: rgb(44,114,198);">14.900.000 VND</span>
+                </div>
+                <div class="slider-benefit-product d-flex justify-content-between ">
+                    <span>Ưu đãi</span>
+                    <span style="font-weight :bold">Trả góp lãi xuất 0%</span>
+                </div>
+                <button class="btn-slider btn btn-primary container">MUA NGAY</button>
+            </div>
+            <div class="item col-12">
+                <img src="./img/klara-s-blackSLIDER.jpg" alt="">
+                <div class="slider-name-product">
+                    <h3>Feliz - Đỏ</h3>
+                </div>
+                <div class="slider-price-product d-flex justify-content-between ">
+                    <span>Giá bán</span>
+                    <span style="font-weight :bold ; color: rgb(44,114,198);">14.900.000 VND</span>
+                </div>
+                <div class="slider-benefit-product d-flex justify-content-between ">
+                    <span>Ưu đãi</span>
+                    <span style="font-weight :bold">Trả góp lãi xuất 0%</span>
+                </div>
+                <button class="btn-slider btn btn-primary container">MUA NGAY</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-------------------------  POLICY POWER -------------------------------->
+
+<div class="policy-power">
+    <div class="container">
+        <div class="policy-title  d-flex justify-content-center">
+            <h2 class="policy-power-title pt-20">CHÍNH SÁCH PIN LINH HOẠT - TIẾT KIỆM </h2>
+        </div>
+        <div class="policy-detail d-flex justify-content-center">
+            <span>
+                Mua pin, thuê pin linh hoạt, tiết kiệm. Khách hàng linh hoạt lựa chọn hình thức mua pin <br>
+                hoặc thuê pin ưu việt với gói thuê pin chỉ từ 149.000 vnđ/pin/tháng.
+            </span>
+        </div>
+        <div class="policy-banner  d-flex justify-content-center">
+            <img class="policy-img" src="./img/battery.png" alt="">
+        </div>
+        <div class="btn-pilicy d-flex justify-content-center">
+            <button class="btn btn-primary">CHÍNH SÁCH THUÊ PIN</button>
+        </div>
+    </div>
+</div>
+
+<!--------------------  TUTORIAL -------------------------------->
+<div class="tutorial">
+    <div class="tutorial-title d-flex justify-content-center">
+        <h2 class="tutorial-title-h1">HƯỚNG DẪN TRẢ GÓP</h2>
+    </div>
+    <div class="container">
+        <div class="tutorial-card d-flex justify-content-center">
+            <a class="tutorial-card-link href="">TRẢ GÓP QUA THẺ TÍN DỤNG</a>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 col-12 mt-20">
+                <img width="100%" src="./img/step_1.png" alt="">
+            </div>
+            <div class="col-md-4 mt-20">
+                <img width="100%" src="./img/step_2.png" alt="">
+            </div>
+            <div class="col-md-4 mt-20">
+                <img width="100%" src="./img/step_3.png" alt="">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--------------------  lAST BANNER -------------------------------->
+<section class="vf-home-last-banner">
+    <img class="vf-home-last-banner-img" src="./img/banner2_1.png" alt="">
+</section>
+
+<!--------------------  Regitration -------------------------------->
+@{ Html.RenderAction("RenderRegisterTestDriver", "TestDriver");}
