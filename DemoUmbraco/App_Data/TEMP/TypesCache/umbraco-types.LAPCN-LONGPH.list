@@ -628,7 +628,7 @@ Umbraco.Web.PublishedModels.File, DemoUmbraco, Version=1.0.0.0, Culture=neutral,
 Umbraco.Web.PublishedModels.Folder, DemoUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PublishedModels.Home, DemoUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PublishedModels.Image, DemoUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.PublishedModels.Login, DemoUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.PublishedModels.LoginRegister, DemoUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PublishedModels.Member, DemoUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PublishedModels.News, DemoUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PublishedModels.NewsDetails, DemoUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -638,7 +638,4 @@ Umbraco.Web.PublishedModels.UmbracoMediaArticle, DemoUmbraco, Version=1.0.0.0, C
 Umbraco.Web.PublishedModels.UmbracoMediaAudio, DemoUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PublishedModels.UmbracoMediaVectorGraphics, DemoUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PublishedModels.UmbracoMediaVideo, DemoUmbraco, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-
-Umbraco.Core.Deploy.IServiceConnector
-
 

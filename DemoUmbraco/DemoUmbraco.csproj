@@ -2382,6 +2382,7 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\contact.css" />
     <Content Include="css\login.css" />
+    <Content Include="css\loginn.css" />
     <Content Include="css\news.css" />
     <Content Include="css\stylehome.css" />
     <Content Include="fontawesome-free-5.15.3-web\attribution.js" />
@@ -6538,7 +6539,7 @@
     <Compile Include="App_Data\Models\Folder.generated.cs" />
     <Compile Include="App_Data\Models\Home.generated.cs" />
     <Compile Include="App_Data\Models\Image.generated.cs" />
-    <Compile Include="App_Data\Models\Login.generated.cs" />
+    <Compile Include="App_Data\Models\LoginRegister.generated.cs" />
     <Compile Include="App_Data\Models\Member.generated.cs" />
     <Compile Include="App_Data\Models\News.generated.cs" />
     <Compile Include="App_Data\Models\NewsDetails.generated.cs" />
@@ -8961,10 +8962,12 @@
     <Content Include="Views\DichVu.cshtml" />
     <Content Include="Views\News.cshtml" />
     <Content Include="Views\NewsDetails.cshtml" />
-    <Content Include="Views\Login.cshtml" />
     <Content Include="Views\masterLayout.cshtml" />
     <Content Include="Views\Contact.cshtml" />
     <Content Include="Views\Partials\SharedLayout\_ContactPartial.cshtml" />
+    <Content Include="Views\MacroPartials\Login.cshtml" />
+    <Content Include="Views\MacroPartials\RegisterMember.cshtml" />
+    <Content Include="Views\LoginRegister.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -8979,6 +8982,7 @@
     <Folder Include="bootstrap-vinfast\.git\refs\tags\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Contact\" />
+    <Folder Include="Views\Member\" />
     <Folder Include="Views\Partials\Home\" />
     <Folder Include="Views\TestDriver\" />
   </ItemGroup>

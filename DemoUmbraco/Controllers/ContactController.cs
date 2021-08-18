@@ -38,7 +38,6 @@ namespace DemoUmbraco.Controllers
                 return RedirectToCurrentUmbracoPage();
             }
             return CurrentUmbracoPage();
-
         }
     }
 }

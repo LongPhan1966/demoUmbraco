@@ -21,3 +21,8 @@
         display: none !important;
     }
   }
+input#Username {
+    border: none !important;
+    background-color: #fff;
+    outline: none;
+}

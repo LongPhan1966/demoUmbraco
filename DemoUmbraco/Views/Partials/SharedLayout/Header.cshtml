@@ -1,13 +1,10 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @{
-    //var lienhe = Model.Descendants().ToList();
-    //var a = "aaa";
-    //var lienhe = (LienHe)Umbraco.Content(1071);
     var Home = (Home)Umbraco.Content(1065);
     var news = (News)Umbraco.Content(1099);
-    var login = (Login)Umbraco.Content(1126);
     var contact = (Contact)Umbraco.Content(1139);
-    
+    var register = (LoginRegister)Umbraco.Content(1170);
+    var login = (LoginRegister)Umbraco.Content(1171);
 }
 <link href="~/css/stylehome.css" rel="stylesheet" /> 
 <header class="vf-home">
@@ -307,7 +304,7 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="nav-mb-item nav-mb-left">
-                    <a href="@login.Url()"><i class="fas fa-user"></i></a>
+                    <a href="#"><i class="fas fa-user"></i></a>
                 </div>
                 <div class="nav-mb-item nav-mb-logo">
                     <a href="@Home.Url()">
