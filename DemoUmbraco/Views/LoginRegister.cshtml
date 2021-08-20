@@ -1,8 +1,14 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.LoginRegister>
 @using ContentModels = Umbraco.Web.PublishedModels;
 @{
-	Layout = "WebBaseTemplates.cshtml";
+    Layout = "WebBaseTemplates.cshtml";
+    var home = (Home)Umbraco.Content(1065);
 }
 
-@Umbraco.RenderMacro("Login")
+<link href="~/css/regiter.css" rel="stylesheet" />
 @Umbraco.RenderMacro("RegisterMember")
+@Umbraco.RenderMacro("Login")
+@if (Members.GetCurrentLoginStatus().IsLoggedIn && Request.UrlReferrer != null)
+{
+    Response.Redirect(home.Url());
+}

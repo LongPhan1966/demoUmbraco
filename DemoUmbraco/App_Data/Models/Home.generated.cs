@@ -45,11 +45,88 @@ namespace Umbraco.Web.PublishedModels
 		// properties
 
 		///<summary>
-		/// aaaaa
+		/// Bike
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
-		[ImplementPropertyType("aaaaa")]
-		public virtual string Aaaaa => this.Value<string>("aaaaa");
+		[ImplementPropertyType("bike")]
+		public virtual string Bike => this.Value<string>("bike");
+
+		///<summary>
+		/// buttonBuy
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("buttonBuy")]
+		public virtual string ButtonBuy => this.Value<string>("buttonBuy");
+
+		///<summary>
+		/// Car
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("car")]
+		public virtual string Car => this.Value<string>("car");
+
+		///<summary>
+		/// col-1 content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("col1Content")]
+		public virtual string Col1Content => this.Value<string>("col1Content");
+
+		///<summary>
+		/// col-1 head
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("col1Head")]
+		public virtual string Col1Head => this.Value<string>("col1Head");
+
+		///<summary>
+		/// col-2 content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("col2Content")]
+		public virtual string Col2Content => this.Value<string>("col2Content");
+
+		///<summary>
+		/// col-2 head
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("col2Head")]
+		public virtual string Col2Head => this.Value<string>("col2Head");
+
+		///<summary>
+		/// col-3 content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("col3Content")]
+		public virtual string Col3Content => this.Value<string>("col3Content");
+
+		///<summary>
+		/// col-3 head
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("col3Head")]
+		public virtual string Col3Head => this.Value<string>("col3Head");
+
+		///<summary>
+		/// Contact
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("contact")]
+		public virtual string Contact => this.Value<string>("contact");
+
+		///<summary>
+		/// DetailNewProduct
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("detailNewProduct")]
+		public virtual string DetailNewProduct => this.Value<string>("detailNewProduct");
+
+		///<summary>
+		/// Ecosystem
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("ecosystem")]
+		public virtual string Ecosystem => this.Value<string>("ecosystem");
 
 		///<summary>
 		/// logo: logo home
@@ -57,5 +134,103 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
 		[ImplementPropertyType("logo")]
 		public virtual global::Umbraco.Core.Models.MediaWithCrops Logo => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("logo");
+
+		///<summary>
+		/// NameBestProduct
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("nameBestProduct")]
+		public virtual string NameBestProduct => this.Value<string>("nameBestProduct");
+
+		///<summary>
+		/// News
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("news")]
+		public virtual string News => this.Value<string>("news");
+
+		///<summary>
+		/// offerNewProduct
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("offerNewProduct")]
+		public virtual string OfferNewProduct => this.Value<string>("offerNewProduct");
+
+		///<summary>
+		/// Offers
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("offers")]
+		public virtual string Offers => this.Value<string>("offers");
+
+		///<summary>
+		/// Partner
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("partner")]
+		public virtual string Partner => this.Value<string>("partner");
+
+		///<summary>
+		/// Prirce
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("price")]
+		public virtual string Price => this.Value<string>("price");
+
+		///<summary>
+		/// Question
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("question")]
+		public virtual string Question => this.Value<string>("question");
+
+		///<summary>
+		/// Service
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("service")]
+		public virtual string Service => this.Value<string>("service");
+
+		///<summary>
+		/// ShowRoom
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("showRoom")]
+		public virtual string ShowRoom => this.Value<string>("showRoom");
+
+		///<summary>
+		/// Special Offers
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("specialOffers")]
+		public virtual string SpecialOffers => this.Value<string>("specialOffers");
+
+		///<summary>
+		/// Text drive
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("textDrive")]
+		public virtual string TextDrive => this.Value<string>("textDrive");
+
+		///<summary>
+		/// titleBestSaler
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("titleBestSaler")]
+		public virtual string TitleBestSaler => this.Value<string>("titleBestSaler");
+
+		///<summary>
+		/// TitleNewProduct
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("titleNewProduct")]
+		public virtual string TitleNewProduct => this.Value<string>("titleNewProduct");
+
+		///<summary>
+		/// Tools
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.15.1")]
+		[ImplementPropertyType("tools")]
+		public virtual string Tools => this.Value<string>("tools");
 	}
 }

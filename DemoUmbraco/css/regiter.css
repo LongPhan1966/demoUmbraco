@@ -1,0 +1,46 @@
+﻿* {
+    border: border-box;
+}
+
+.background-login-img {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+
+@media (max-width : 992px) {
+    .background-login-img {
+        display: none !important;
+    }
+}
+
+.input-username,
+.input-email,
+.input-password,
+.login-input-username,
+.login-input-password {
+    outline: none;
+    border: none;
+    margin: 8px 0px 0px 10px;
+}
+
+.register-name,
+.register-email,
+.register-password,
+.login-username,
+.login-password {
+    border: 1px solid #808080;
+    border-radius: 5px;
+    padding-left: 10px;
+}

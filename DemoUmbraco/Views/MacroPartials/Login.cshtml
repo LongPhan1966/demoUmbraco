@@ -5,7 +5,7 @@
 @using Umbraco.Web.Models
 @using Umbraco.Web.Controllers
 
-
+<link href="~/css/login_and_register.css" rel="stylesheet" />
 @{
     var loginModel = new LoginModel();
     loginModel.RedirectUrl = HttpContext.Current.Request.Url.AbsolutePath;
@@ -23,21 +23,31 @@
 @using (Html.BeginUmbracoForm<UmbLoginController>("HandleLogin"))
 {
     @Html.HiddenFor(m => loginModel.RedirectUrl)
-    <fieldset>
-        <legend>Login</legend>
+    <fieldset class="container">
+        <legend>Login Here</legend>
 
         @Html.ValidationSummary("loginModel", true)
 
-        @Html.LabelFor(m => loginModel.Username)
-        @Html.TextBoxFor(m => loginModel.Username)
-        @Html.ValidationMessageFor(m => loginModel.Username)
-        <br />
+        <div class="row">
+            <div class="col-md-5">
+                <div class="login-username  mb-20">
+                    @Html.LabelFor(m => loginModel.Username, null, new { @class = "login-lable-username" })
+                    @Html.TextBoxFor(m => loginModel.Username, null, new { placeholder = "Enter your Email", @class = "login-input-username"})
 
-        @Html.LabelFor(m => loginModel.Password)
-        @Html.PasswordFor(m => loginModel.Password)
-        @Html.ValidationMessageFor(m => loginModel.Password)
-        <br />
+                </div>
+                @Html.ValidationMessageFor(m => loginModel.Username)
 
-        <button>Login</button>
+
+                <div class="login-password  mb-20">
+
+                    @Html.LabelFor(m => loginModel.Password, null, new { @class = "login-lable-password" })
+                    @Html.PasswordFor(m => loginModel.Password, new { placeholder = "Enter your password", @class = "login-input-password" })
+
+                </div>
+                @Html.ValidationMessageFor(m => loginModel.Password)
+
+                <button class="btn btn-outline-success mb-50">Login</button>
+            </div>
+        </div>
     </fieldset>
 }

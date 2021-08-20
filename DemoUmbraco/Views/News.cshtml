@@ -3,8 +3,8 @@
 @{
     Layout = "webBaseTemplates.cshtml";
 
-    var news = (News)Model.Root();
-    var newsdetails = news.Children<NewsDetails>().OrderByDescending(x => x.CreateDate);
+    
+    var newsdetails = Model.Children<NewsDetails>().OrderByDescending(x => x.CreateDate);
 
     var pageSize = 6;
 
@@ -34,7 +34,7 @@
 
 
 }
-<section class="slider1">
+<section class="slider1 mt-50">
     <div class="owl-carousel owl-theme aaaa">
         <div class="item item-slider">
             <img style="height: auto;" src="~/img/Slider-post1.jpg" alt="">

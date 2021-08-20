@@ -2381,9 +2381,9 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\contact.css" />
-    <Content Include="css\login.css" />
-    <Content Include="css\loginn.css" />
+    <Content Include="css\login_and_register.css" />
     <Content Include="css\news.css" />
+    <Content Include="css\regiter.css" />
     <Content Include="css\stylehome.css" />
     <Content Include="fontawesome-free-5.15.3-web\attribution.js" />
     <Content Include="fontawesome-free-5.15.3-web\css\all.css" />
@@ -6534,17 +6534,15 @@
     <Compile Include="App_Data\Models\Contact.generated.cs" />
     <Compile Include="App_Data\Models\ContactList.generated.cs" />
     <Compile Include="App_Data\Models\ContentBase.generated.cs" />
-    <Compile Include="App_Data\Models\DichVu.generated.cs" />
     <Compile Include="App_Data\Models\File.generated.cs" />
     <Compile Include="App_Data\Models\Folder.generated.cs" />
     <Compile Include="App_Data\Models\Home.generated.cs" />
     <Compile Include="App_Data\Models\Image.generated.cs" />
     <Compile Include="App_Data\Models\LoginRegister.generated.cs" />
+    <Compile Include="App_Data\Models\LoginStatus.generated.cs" />
     <Compile Include="App_Data\Models\Member.generated.cs" />
     <Compile Include="App_Data\Models\News.generated.cs" />
     <Compile Include="App_Data\Models\NewsDetails.generated.cs" />
-    <Compile Include="App_Data\Models\RegisterTestDriver.generated.cs" />
-    <Compile Include="App_Data\Models\TestDriverList.generated.cs" />
     <Compile Include="App_Data\Models\UmbracoMediaArticle.generated.cs" />
     <Compile Include="App_Data\Models\UmbracoMediaAudio.generated.cs" />
     <Compile Include="App_Data\Models\UmbracoMediaVectorGraphics.generated.cs" />
@@ -8968,6 +8966,7 @@
     <Content Include="Views\MacroPartials\Login.cshtml" />
     <Content Include="Views\MacroPartials\RegisterMember.cshtml" />
     <Content Include="Views\LoginRegister.cshtml" />
+    <Content Include="Views\MacroPartials\Login Status.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -8984,7 +8983,6 @@
     <Folder Include="Views\Contact\" />
     <Folder Include="Views\Member\" />
     <Folder Include="Views\Partials\Home\" />
-    <Folder Include="Views\TestDriver\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
